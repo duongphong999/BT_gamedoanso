@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>xổ số lô tô đoán trúng có thưởng ngay</h1>
+    <input type="button" name="" id="" value="Play" onclick="play()">
+    <script>
+        function play(){
+            debugger;
+            let n = prompt('hãy nhập vào đây 1 số bất kì từ 1->10');
+            let r = Math.round(10*Math.random());
+
+            for(let i=0; i<3; i++){
+                if(n ==r){
+                    alert('chúc mừng bạn là người may mắn');
+                }else{
+                    n=prompt('bạn còn '+ (2-i) + ' lần nhập');
+                }
+            }
+        }
+    </script>
+</body>
+</html>
